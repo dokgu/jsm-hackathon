@@ -6,8 +6,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-	title: 'Sign Up | Magic UI',
-	description: 'Sign Up for Magic UI'
+	title: 'Sign Up | JSM Hackathon',
+	description: 'Sign Up for JSM Hackathon'
 };
 
 export default function SignUpPage() {
@@ -24,7 +24,7 @@ export default function SignUpPage() {
 			<div className='mx-auto flex w-full flex-col justify-center gap-6 sm:w-[350px]'>
 				<div className='flex flex-col gap-2 text-center'>
 					{/* <Icons.logo className="mx-auto h-6 w-6" /> */}
-					<h1 className='text-2xl font-semibold tracking-tight'>Welcome to Magic UI</h1>
+					<h1 className='text-2xl font-semibold tracking-tight'>Welcome to JSM Hackathon</h1>
 					<p className='text-sm text-muted-foreground'>Sign up for an account</p>
 				</div>
 				<UserAuthForm />
