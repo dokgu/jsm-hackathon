@@ -22,21 +22,25 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 				<meta name='description' content='All-in-one platform for startups.' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/icon.png' />
-				<Script async defer src='https://app.visitortracking.com/assets/js/tracer.js' />
-				<Script
-					id='visitor-tracking'
-					dangerouslySetInnerHTML={{
-						__html: `
-							function init_tracer() {
-								var tracer = new Tracer({
-									websiteId : 'e6e1be1d-1350-49ef-81d2-56f77ebe6d91',
-									async : true,
-									debug : false
-								});
-							}
-						`
-					}}
-				/>
+				{process.env.NODE_ENV === 'production' && (
+					<>
+						<Script async defer src='https://app.visitortracking.com/assets/js/tracer.js' />
+						<Script
+							id='visitor-tracking'
+							dangerouslySetInnerHTML={{
+								__html: `
+									function init_tracer() {
+										var tracer = new Tracer({
+											websiteId : 'e6e1be1d-1350-49ef-81d2-56f77ebe6d91',
+											async : true,
+											debug : false
+										});
+									}
+								`
+							}}
+						/>
+					</>
+				)}
 			</head>
 			<body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
 				<ThemeProvider attribute='class' defaultTheme='dark' disableTransitionOnChange>
