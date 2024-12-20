@@ -1,4 +1,10 @@
 import Image from 'next/image';
+import amazon from '@/public/companies/Amazon.svg';
+import github from '@/public/companies/GitHub.svg';
+import google from '@/public/companies/Google.svg';
+import microsoft from '@/public/companies/Microsoft.svg';
+import notion from '@/public/companies/Notion.svg';
+import uber from '@/public/companies/Uber.svg';
 
 export default function ClientSection() {
 	return (
@@ -12,48 +18,56 @@ export default function ClientSection() {
 						<ul className='flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white'>
 							<li>
 								<Image
-									src={`https://cdn.magicui.design/companies/Google.svg`}
+									src={google}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
 									width={112}
 									height={32}
-									alt=''
+									alt='Google'
 								/>
 							</li>
 							<li>
 								<Image
-									src={`https://cdn.magicui.design/companies/Microsoft.svg`}
+									src={microsoft}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
 									width={112}
 									height={32}
-									alt=''
+									alt='Microsoft'
 								/>
 							</li>
 							<li>
 								<Image
-									src={`https://cdn.magicui.design/companies/GitHub.svg`}
+									src={amazon}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
 									width={112}
 									height={32}
-									alt=''
-								/>
-							</li>
-
-							<li>
-								<Image
-									src={`https://cdn.magicui.design/companies/Uber.svg`}
-									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
-									width={112}
-									height={32}
-									alt=''
+									alt='Amazon'
 								/>
 							</li>
 							<li>
 								<Image
-									src={`https://cdn.magicui.design/companies/Notion.svg`}
+									src={github}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
 									width={112}
 									height={32}
-									alt=''
+									alt='GitHub'
+								/>
+							</li>
+							<li>
+								<Image
+									src={uber}
+									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
+									width={112}
+									height={32}
+									alt='Uber'
+								/>
+							</li>
+							<li>
+								<Image
+									src={notion}
+									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
+									width={112}
+									height={32}
+									alt='Notion'
 								/>
 							</li>
 						</ul>
