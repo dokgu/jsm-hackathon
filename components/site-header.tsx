@@ -102,7 +102,6 @@ export function SiteHeader() {
 					<Link className='text-md flex items-center' href='/'>
 						JSM Hackathon
 					</Link>
-
 					<div className='ml-auto flex h-full items-center'>
 						<Link className='mr-6 text-sm' href='/signin'>
 							Log in
@@ -133,7 +132,6 @@ export function SiteHeader() {
 						<Link className='text-md flex items-center' href='/'>
 							JSM Hackathon
 						</Link>
-
 						<button className='ml-6 md:hidden' onClick={() => setHamburgerMenuIsOpen((open) => !open)}>
 							<span className='sr-only'>Toggle menu</span>
 							{hamburgerMenuIsOpen ? <XIcon /> : <AlignJustify />}

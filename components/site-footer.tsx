@@ -1,6 +1,6 @@
-import { DiscordLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { DiscordLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 
 const footerNavs = [
 	{
@@ -20,7 +20,6 @@ const footerNavs = [
 			}
 		]
 	},
-
 	{
 		label: 'Community',
 		items: [
@@ -108,7 +107,6 @@ export function SiteFooter() {
 						))}
 					</div>
 				</div>
-
 				<div className='flex flex-col sm:flex-row sm:flex sm:items-center sm:justify-between rounded-md border-neutral-700/20 py-4 px-8 gap-2'>
 					<div className='flex space-x-5 sm:justify-center sm:mt-0'>
 						{footerSocials.map((social) => (

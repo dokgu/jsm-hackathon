@@ -11,6 +11,7 @@ import { useRef } from 'react';
 export default function HeroSection() {
 	const ref = useRef(null);
 	const inView = useInView(ref, { once: true, margin: '-100px' });
+
 	return (
 		<section id='hero' className='relative mx-auto mt-32 max-w-[80rem] px-6 text-center md:px-8'>
 			<div className='backdrop-filter-[12px] inline-flex h-7 items-center justify-between rounded-full border border-white/5 bg-white/10 px-3 text-xs text-white dark:text-black transition-all ease-in hover:cursor-pointer hover:bg-white/20 group gap-1 translate-y-[-1rem] animate-fade-in opacity-0'>
@@ -45,7 +46,6 @@ export default function HeroSection() {
 						colorFrom='var(--color-one)'
 						colorTo='var(--color-two)'
 					/>
-
 					<Image
 						src='/hero-dark.png'
 						className='hidden relative w-full h-full rounded-[inherit] border object-contain dark:block'

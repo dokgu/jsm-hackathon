@@ -16,6 +16,7 @@ export const userAuthSchema = z.object({
 	email: z.string().email(),
 	password: z.string().optional()
 });
+
 type FormData = z.infer<typeof userAuthSchema>;
 
 interface UserAuthFormProps extends React.HTMLAttributes<HTMLDivElement> {}

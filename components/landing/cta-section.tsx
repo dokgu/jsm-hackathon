@@ -58,6 +58,7 @@ const shuffleArray = (array: any[]) => {
 		// And swap it with the current element.
 		[array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
 	}
+
 	return array;
 };
 
@@ -83,6 +84,7 @@ const Card = (card: { icon: JSX.Element; bg: JSX.Element }) => {
 			initial={{ opacity: 0 }}
 			animate={controls}
 			className={cn(
+				// general styles
 				'relative size-20 cursor-pointer overflow-hidden rounded-2xl border p-4',
 				// light styles
 				'bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]',
