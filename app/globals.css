@@ -36,15 +36,13 @@
 
 		/* Custom properties */
 		--navigation-height: 3.5rem;
-		--color-one: #ffbd7a;
+		/* --color-one: #ffbd7a;
 		--color-two: #fe8bbb;
-		--color-three: #9e7aff;
+		--color-three: #9e7aff; */
 
-		/* 
-    --color-one: #37ecba;
-    --color-two: #72afd3;
-    --color-three: #ff2e63;
-     */
+		--color-one: #7afff4;
+		--color-two: #8baafe;
+		--color-three: #7ac1ff;
 	}
 
 	.dark {
