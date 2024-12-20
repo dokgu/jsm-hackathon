@@ -1,0 +1,16 @@
+# Ignore artifacts:
+build
+coverage
+
+# Node
+node_modules
+
+# NextJS
+.next
+out
+
+# YML
+*.yml
+
+# Markdown
+*.md
