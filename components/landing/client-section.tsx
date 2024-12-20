@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ClientSection() {
 	return (
 		<section id='clients' className='text-center mx-auto max-w-[80rem] px-6 md:px-8'>
@@ -9,34 +11,49 @@ export default function ClientSection() {
 					<div className='mt-6'>
 						<ul className='flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white'>
 							<li>
-								<img
+								<Image
 									src={`https://cdn.magicui.design/companies/Google.svg`}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
+									width={112}
+									height={32}
+									alt=''
 								/>
 							</li>
 							<li>
-								<img
+								<Image
 									src={`https://cdn.magicui.design/companies/Microsoft.svg`}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
+									width={112}
+									height={32}
+									alt=''
 								/>
 							</li>
 							<li>
-								<img
+								<Image
 									src={`https://cdn.magicui.design/companies/GitHub.svg`}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
+									width={112}
+									height={32}
+									alt=''
 								/>
 							</li>
 
 							<li>
-								<img
+								<Image
 									src={`https://cdn.magicui.design/companies/Uber.svg`}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
+									width={112}
+									height={32}
+									alt=''
 								/>
 							</li>
 							<li>
-								<img
+								<Image
 									src={`https://cdn.magicui.design/companies/Notion.svg`}
 									className='h-8 w-28 px-2 dark:brightness-0 dark:invert'
+									width={112}
+									height={32}
+									alt=''
 								/>
 							</li>
 						</ul>

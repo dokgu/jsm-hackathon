@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { BorderBeam } from '@/components/jsm-hackathon/border-beam';
 import TextShimmer from '@/components/jsm-hackathon/text-shimmer';
 import { Button } from '@/components/ui/button';
@@ -45,15 +46,19 @@ export default function HeroSection() {
 						colorTo='var(--color-two)'
 					/>
 
-					<img
+					<Image
 						src='/hero-dark.png'
-						alt='Hero Image'
 						className='hidden relative w-full h-full rounded-[inherit] border object-contain dark:block'
-					/>
-					<img
-						src='/hero-light.png'
+						width={1336}
+						height={800}
 						alt='Hero Image'
-						className='block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden'
+					/>
+					<Image
+						src='/hero-light.png'
+						className='block relative w-full h-full rounded-[inherit] border object-contain dark:hidden'
+						width={1336}
+						height={800}
+						alt='Hero Image'
 					/>
 				</div>
 			</div>
