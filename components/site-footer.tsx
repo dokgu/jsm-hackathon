@@ -10,11 +10,11 @@ const footerNavs = [
 				name: 'Email Collection'
 			},
 			{
-				href: '/pricing',
+				href: '/',
 				name: 'Pricing'
 			},
 			{
-				href: '/faq',
+				href: '/',
 				name: 'FAQ'
 			}
 		]
@@ -32,7 +32,7 @@ const footerNavs = [
 				name: 'Twitter'
 			},
 			{
-				href: 'mailto:hello@chatcollect.com',
+				href: 'mailto:test@domain.com',
 				name: 'Email'
 			}
 		]
@@ -41,12 +41,12 @@ const footerNavs = [
 		label: 'Legal',
 		items: [
 			{
-				href: '/terms',
+				href: '/',
 				name: 'Terms'
 			},
 
 			{
-				href: '/privacy',
+				href: '/',
 				name: 'Privacy'
 			}
 		]

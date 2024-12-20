@@ -4,7 +4,7 @@ import Marquee from '@/components/jsm-hackathon/marquee';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import { BarChart, ChevronRight, File, Globe, HeartHandshake, Rss, Shield } from 'lucide-react';
+import { BarChart, ChevronRight, File, Globe, HeartHandshake, Rss, Shield, Rocket } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useId, useRef, useState } from 'react';
 
@@ -148,7 +148,7 @@ export default function CallToActionSection() {
 						</Marquee>
 						<div className='absolute z-10'>
 							<div className='mx-auto size-24 rounded-[2rem] border bg-white/10 p-3 shadow-2xl backdrop-blur-md dark:bg-black/10 lg:size-32'>
-								<HeartHandshake className='mx-auto size-16 text-black dark:text-white lg:size-24' />
+								<Rocket className='mx-auto size-16 text-black dark:text-white lg:size-24' />
 							</div>
 							<div className='z-10 mt-4 flex flex-col items-center text-center text-primary'>
 								<h1 className='text-3xl font-bold lg:text-4xl'>
